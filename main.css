@@ -1,0 +1,274 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
+  background: rgb(238, 174, 202);
+  background: linear-gradient(
+    142deg,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+body > header > h1 {
+  margin-bottom: 15px;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background-color: #000;
+  margin: 20px 0;
+}
+
+body > header > a {
+  background: rgb(238, 174, 202);
+  background: linear-gradient(
+    142deg,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+  border: 1px solid rgb(226, 219, 219);
+  border-radius: 5px;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  padding: 5px 5px;
+  cursor: pointer;
+
+  transition: all 0.2s ease;
+}
+
+
+body > header > a:hover {
+  border: 1px solid rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  padding: 8px 8px;
+}
+
+#employee-list,
+#tech-supplier-list,
+#supplier-list,
+#product-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 15px 50px;
+}
+
+.employee,
+.supplier,
+.product {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 1rem;
+  width: 10.3%;
+
+  border: 1px solid black;
+  border-radius: 10px;
+
+  background-color: rgba(255, 255, 255, 0.658);
+}
+
+.product {
+  width: 18%;
+}
+
+.product img {
+  width: 100%;
+}
+
+.product a {
+  text-decoration: none;
+  color: black;
+}
+
+.product a:hover {
+  color: red;
+}
+
+.employee,
+.supplier {
+  width: 15%;
+}
+
+#employee > div.employee {
+  margin: 15px 50px;
+}
+
+main h2 {
+  text-align: center;
+  padding-top: 15px;
+}
+
+#employee > form,
+#products-by-price > form {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+
+  align-items: center;
+  justify-content: center;
+  padding-top: 15px;
+}
+
+#employee_name,
+#max_price {
+  border: 1px solid black;
+  border-radius: 5px;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  padding: 5px 5px;
+}
+
+#employee_name {
+  width: 15%;
+}
+
+#employee > form > button,
+#products-by-price > form > button {
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  padding: 5px 5px;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+#products-by-price > form > button:hover {
+  border: 1px solid white;
+  background-color: rgb(31, 29, 29);
+  color: white;
+  padding: 10px 10px;
+}
+
+#employee > form > button:hover {
+  border: 1px solid white;
+  background-color: rgb(31, 29, 29);
+  color: white;
+  padding: 12px 12px;
+}
+/* footer  */
+footer {
+  background-color: #002e2e;
+  color: #fff;
+  padding: 2em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.cart_body footer {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+footer a img {
+  margin-right: 8px;
+  width: 24px;
+  height: 24px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.footer-contact {
+  display: flex;
+  gap: 1em;
+}
+
+.footer-contact a {
+background-color: white;
+color: black;
+border-radius: 5px;
+}
+
+.footer-about {
+  text-align: right;
+  padding-right: 2em;
+}
+
+.main_login {
+  display: flex;
+  justify-content: center;
+}
+
+/* registratio, login */
+
+
+
+.main_register, .login{
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 2em;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.registration h2, .login h2 {
+  text-align: center;
+}
+
+.registration label, .login label {
+  display: block;
+  margin-bottom: 0.5em;
+}
+
+.registration input, .login input{
+  width: 100%;
+  padding: 0.5em;
+  margin-bottom: 1em;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.registration button, .login button {
+  width: 100%;
+  padding: 0.5em;
+  border: none;
+  border-radius: 3px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.registration button:hover, .login button:hover {
+  background-color: #0056b3;
+}
+
+.login {
+  margin: 24.8vh;
+}
+
+
